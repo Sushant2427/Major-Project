@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/uchiha.png" width="150px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="About us.html">About Us</us></a></li>
+                    <li><a href="Contact us.html">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+    
+    
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/basket-cart-icon-27.png" width="25px" height="30px"></a>
+            <img src="images/menu-icon-24.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    
+    <!-- payment -->
+
+    <header>
+        <div class="contaner">
+            <div class="left">
+                <h3>Billing Address</h3>
+                <form>
+                    Full Name
+                    <input type="text" name="" placeholder="Enter name">
+                    Email
+                    <input type="text" name="" placeholder="Enter email">
+                    Address
+                    <input type="text" name="" placeholder="Enter address">
+                    City
+                    <input type="text" name="" placeholder="Enter city">
+                    <div id="zip">
+                        <label>
+                            State
+                            <select>
+                                <option>Choose State..</option>
+                                <option>Delhi</option>
+                                <option>Haryana</option>
+                                <option>Mumbai</option>
+                            </select>
+                        </label>
+                        <label>
+                            Zip Code
+                            <input type="number" name="" placeholder="Zip code">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Payment</h3>
+                <form>
+                    Accepted card <br>
+                    <img src="images/MClogo-c823e495c5cf455c89ddfb0e17fc7978.png" width="15%">
+                    <img src="images/PayPal_Logo.png" width="20%">
+                    <img src="images/219_visa.png" width="20%">
+                    <br>
+                    Credit card number
+                    <input type="text" name="" placeholder="Enter number">
+                    Exp month
+                    <input type="text" name="" placeholder="Enter month">
+                    <div id="zip">
+                        <label>
+                            Exp Year
+                            <select>
+                                <option>Choose Year..</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                        </label>
+                        <label>
+                            CVV
+                            <input type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                </form>
+                
+                <a href="success payment.html" class="btn">Proceed to checkout</a>
+            </div>
+        </div>
+    </header>
+    <!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download app for IOS or Android</p>
+                <div class="app-logo">
+                    <img src="images/Download_on_the_App_Store_Badge.svg.png">
+                    <img src="images/Google_Play_Store_badge_EN.svg.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/uchiha.png">
+                <p>our products are best</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+               <ul>
+                <li><img src="images/Facebook_Logo_2023.png"> Facebook</li>
+                <li><img src="images/Instagram_logo_2016.svg.png"> Instagram</li>
+                <li><img src="images/Logo_of_Twitter.svg.png"> Twitter</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js for toggle menu -->
+
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+
+    }
+</script>
+
+</body>
+
+</html>
